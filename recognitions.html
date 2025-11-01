@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The New York Food Guide Honors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="index.html#boroughs">Boroughs</a>
+          <a href="#honorees">Honorees</a>
+        </nav>
+        <div class="hero-badge">Celebrating the Culinary Community</div>
+        <h1>Meet the tastemakers shaping New York dining</h1>
+        <p>
+          The New York Food Guide Honors recognize the chefs, restaurateurs,
+          writers, and advocates who make this city the most exciting place to
+          eat. From humble kitchens to Michelin-starred temples, these leaders
+          push the culinary conversation forward.
+        </p>
+        <a class="cta-button" href="#honorees">
+          View 2024 Honorees
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="hero-recognition" id="honorees">
+      <h1>2024 Honorees</h1>
+      <p>
+        This year's cohort celebrates mentorship, innovation, and the stories
+        behind the plates. Explore the people redefining New York hospitality.
+      </p>
+    </section>
+
+    <section class="recognition-grid" aria-label="2024 honoree profiles">
+      <article class="recognition-card">
+        <span class="role">Chef of the Year</span>
+        <h2>Chef Maya Liao — Hearth &amp; Harbor</h2>
+        <p class="highlight">Reimagining Cantonese cuisine through seasonal tasting menus.</p>
+        <p>
+          Chef Liao mentors young cooks through Chinatown community programs and
+          collaborates with local farms to highlight New York terroir in classic
+          dishes.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <span class="role">Restaurateur</span>
+        <h2>Jorge Alvarez — Mercado Unido</h2>
+        <p class="highlight">Championing immigrant-owned food stalls under one roof.</p>
+        <p>
+          Alvarez built a multi-borough team that provides kitchen incubators,
+          language support, and equitable profit-sharing for vendors launching
+          their first brick-and-mortar spaces.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <span class="role">Food Journalist</span>
+        <h2>Priya Desai — The Midnight Dispatch</h2>
+        <p class="highlight">Giving voice to underreported dining stories citywide.</p>
+        <p>
+          Desai's late-night dispatches spotlight essential workers feeding New
+          York, from halal cart legends to small bakeries baking through the
+          night.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <span class="role">Community Advocate</span>
+        <h2>Marcus Reed — Bed-Stuy Food Co-Op</h2>
+        <p class="highlight">Expanding access to fresh produce with dignity.</p>
+        <p>
+          Reed's co-op trains teens in culinary arts and partners with local
+          chefs for pop-up dinners that fund neighborhood food justice programs.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <span class="role">Pastry Visionary</span>
+        <h2>Chef Alessia Romano — Dolci Notte</h2>
+        <p class="highlight">Bringing Italian pastry artistry to midnight dessert bars.</p>
+        <p>
+          Romano's dessert tastings pair inventive gelati with zero-proof
+          cocktails and showcase seasonal ingredients from regional farms.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <span class="role">Lifetime Achievement</span>
+        <h2>Chef Emeritus Samuel Ortiz — La Isla Verde</h2>
+        <p class="highlight">Five decades of mentorship in Puerto Rican cuisine.</p>
+        <p>
+          Ortiz continues to mentor chefs across the city and hosts community
+          cookouts that preserve generational recipes and cultural history.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      © <span id="year"></span> The New York Food Guide. Return to the
+      <a href="index.html">borough guide</a> or explore our latest
+      <a href="index.html#trending">trending picks</a>.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
