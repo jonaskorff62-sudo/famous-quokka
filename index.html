@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The New York Food Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <nav aria-label="Primary">
+          <a href="#boroughs">Boroughs</a>
+          <a href="#trending">Trending</a>
+          <a href="recognitions.html">Hall of Fame</a>
+        </nav>
+        <div class="hero-badge">Curated by Local Critics</div>
+        <h1>The New York Food Guide</h1>
+        <p>
+          Discover the standout tables, counter-service legends, and hidden gems
+          across every borough. Our editors taste, debate, and obsess so you can
+          book the city's best bites with confidence.
+        </p>
+        <a class="cta-button" href="#boroughs">
+          Explore Borough Picks
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="boroughs" class="filter-panel" aria-labelledby="borough-heading">
+        <h2 id="borough-heading">Choose your borough</h2>
+        <p>
+          Select a borough to see our top tables, essential dishes, and critic
+          notes.
+        </p>
+        <div class="filter-buttons" role="toolbar" aria-label="Borough selector">
+          <button class="filter-button" data-borough="manhattan" aria-pressed="false">
+            Manhattan
+            <span class="subtitle">Fine dining & nightlife</span>
+          </button>
+          <button class="filter-button" data-borough="brooklyn" aria-pressed="false">
+            Brooklyn
+            <span class="subtitle">Neighborhood gems</span>
+          </button>
+          <button class="filter-button" data-borough="queens" aria-pressed="false">
+            Queens
+            <span class="subtitle">Global flavors</span>
+          </button>
+          <button class="filter-button" data-borough="bronx" aria-pressed="false">
+            The Bronx
+            <span class="subtitle">Iconic institutions</span>
+          </button>
+          <button class="filter-button" data-borough="statenIsland" aria-pressed="false">
+            Staten Island
+            <span class="subtitle">Waterfront classics</span>
+          </button>
+        </div>
+      </section>
+
+      <section aria-labelledby="recommendations-title">
+        <header>
+          <h2 id="recommendations-title" data-location-title>Manhattan</h2>
+          <p data-location-tagline>Fine dining & iconic tasting menus</p>
+        </header>
+        <div class="recommendations" aria-live="polite"></div>
+      </section>
+
+      <section class="reviews" aria-labelledby="reviews-title">
+        <header>
+          <h2 id="reviews-title" data-review-title>Critic voices in Manhattan</h2>
+          <p data-review-tagline>What our editors are raving about right now</p>
+        </header>
+        <div class="review-grid" data-review-feed aria-live="polite"></div>
+      </section>
+
+      <section id="trending" aria-labelledby="trending-title">
+        <h2 class="section-heading" id="trending-title">Currently trending</h2>
+        <div class="grid grid-2">
+          <article class="trending-card">
+            <span class="tag">Editor's Pick</span>
+            <h3>Late-night tasting menus are back</h3>
+            <p>
+              From Greenwich Village to Bushwick, post-10pm tasting menus are
+              lighting up the dining scene with snackable courses and natural
+              wine pairings.
+            </p>
+          </article>
+          <article class="trending-card">
+            <span class="tag">Neighborhood Watch</span>
+            <h3>Queens' food halls are the city's best kept secret</h3>
+            <p>
+              The newest food halls in Queens celebrate immigrant-owned
+              kitchens—expect Uzbek, Filipino, and Nepali counters all under one
+              roof.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="awards" aria-labelledby="awards-title">
+        <div class="card">
+          <h2 id="awards-title">The New York Food Guide Honors</h2>
+          <p>
+            Every season we spotlight restaurants that redefine their
+            neighborhoods. Check out the current honorees and revisit our
+            culinary Hall of Fame.
+          </p>
+          <a class="cta-button" href="recognitions.html">Meet the honorees</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> The New York Food Guide. Curated with love for
+      New York City's culinary community. <a href="recognitions.html">Hall of Fame →</a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/boroughs.js" defer></script>
+  </body>
+</html>
